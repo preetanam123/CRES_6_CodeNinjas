@@ -4,11 +4,15 @@ import SignUp from "./Pages/Authentication/SignUp";
 import Landing from "./Pages/Landing/Landing";
 import NavBar from "./Pages/P_Home/Navbar";
 import Sidebar from "./Pages/P_Home/Sidebar";
+import Chat from "./components/Chat";
 
 function App() {
   return (
+    
     <Router>
+      
       <Routes>
+        
         <Route path="/" element = {<Landing />} />
         <Route path="/login" element = {<Login/>} />
         <Route path="/signup" element = {<SignUp />} />
@@ -16,6 +20,7 @@ function App() {
         <Route path="/sidebar" element = {<Sidebar />}></Route>
       </Routes>
     </Router>
+    
   );
 }
 
