@@ -152,7 +152,7 @@ export default function Sidebar() {
                 </div>
 
                 <div className="container mx-auto mt-12">
-                    <form className="grid grid-cols-1 gap-6 mb-6 lg:grid-cols-2">
+                    <form className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6 mx-3">
         
                             <div className="w-full px-2 py-2 bg-white rounded-lg shadow">
                                 <div className="font-bold text-[#000000] text-xl ml-20 mt-4 flex " >
@@ -171,7 +171,7 @@ export default function Sidebar() {
                             </div>
 
                             <div className="w-full px-2 py-2 bg-white rounded-lg shadow">
-                                <div className="font-bold text-[#000000] text-xl ml-20 mt-4 flex " >
+                                <div className="font-bold text-[#000000] text-xl ml-20 mt-4 flex" >
                                     Gender:
                                 <span className="flex gap-6 ml-8">
                                     <input type="radio" id="html" name="fav_language" value="HTML" />
@@ -194,7 +194,7 @@ export default function Sidebar() {
                                     placeholder="John Doe"/>
                             </div>
 
-                            <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex">
+                            <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
                                 <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Age: </label>
                                 <input
                                     type="number"
@@ -214,11 +214,11 @@ export default function Sidebar() {
                                     placeholder=""/>
                             </div>
 
-                            <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex">
-                                <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Blood Group: </label>
+                            <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex h-[57%]">
+                                <label className=" mr-8 font-bold text-[#000000] text-xl ml-20 mt-4">Blood Group: </label>
                                     <select name="bg">
                                         <option value="">A+</option>
-                                        <option value="">A-</option>
+                                        <option value="">A-</option>    
                                         <option value="">B+</option>
                                         <option value="">B-</option>
                                         <option value="">O+</option>
@@ -226,6 +226,20 @@ export default function Sidebar() {
                                         <option value="">AB+</option>
                                         <option value="">AB-</option>
                                     </select>
+                            </div>
+
+                            <div className="ml-6 ">
+                                <button type="submit" className=" h-10 px-5 text-indigo-100 bg-indigo-700
+                                    rounded-lg transition-colors duration-150 focus:shadow-outline hover:bg-indigo-800">
+                                    Submit
+                                </button>
+                            </div>
+
+                            <div className="ml-6 ">
+                                <button type="submit" className=" h-10 px-5 text-indigo-100 bg-indigo-700
+                                    rounded-lg transition-colors duration-150 focus:shadow-outline hover:bg-indigo-800">
+                                    Update
+                                </button>
                             </div>
                         
                     </form>
