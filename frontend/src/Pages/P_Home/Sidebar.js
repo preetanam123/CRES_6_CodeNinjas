@@ -1,4 +1,5 @@
 import React from "react";
+import { Radio } from "@material-tailwind/react";
 import Navbar from "./Navbar";
 
 export default function Sidebar() {
@@ -15,7 +16,7 @@ export default function Sidebar() {
                             <ul className="pt-2 pb-4 space-y-1 text-sm">
                                 <li className="rounded-sm">
                                     <a
-                                        href="#"
+                                        href="#1"
                                         className="flex items-center p-2 space-x-1 rounded-md"
                                     >
                                         <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +29,7 @@ export default function Sidebar() {
                                 </li>
                                 <li className="rounded-sm">
                                     <a
-                                        href="#"
+                                        href="#2"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
                                         <svg width="24px" height="24px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M914.3 292.6H768V109.7H256v182.9H109.7v438.9H256v182.9h512v-183h146.3V292.6zM329.2 182.9h365.7v109.7H329.2V182.9z m365.7 658.2H329.2V548.6h365.7v292.5z m146.3-182.8H768V475.4H256v182.9h-73.1V365.7H841.2v292.6z" fill="#0F1F3C" /><path d="M402.3 621.7h219.4v73.1H402.3zM402.3 731.4h219.4v73.1H402.3z" fill="#0F1F3C" /></svg>
@@ -37,7 +38,7 @@ export default function Sidebar() {
                                 </li>
                                 <li className="rounded-sm">
                                     <a
-                                        href="#"
+                                        href="#3"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
                                         <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +53,7 @@ export default function Sidebar() {
                                 </li>
                                 <li className="rounded-sm">
                                     <a
-                                        href="#"
+                                        href="#4"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
                                         <svg fill="#000000" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
@@ -84,7 +85,7 @@ export default function Sidebar() {
                                 </li>
                                 <li className="rounded-sm">
                                     <a
-                                        href="#"
+                                        href="#5"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
                                         <svg fill="#000000" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
@@ -123,7 +124,7 @@ export default function Sidebar() {
                                 </li>
                                 <li className="rounded-sm">
                                     <a
-                                        href="#"
+                                        href="#6"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
                                         <svg width="24px" height="24px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M175.246 21.422L107.7 60.462l13.984 24.25 24.837-14.357 43.263 75.016-15.336 8.864c-8.12-11.014-20.585-17.512-33.636-18.453-8.796-.633-17.854 1.252-26.013 5.968-21.757 12.575-29.29 40.725-16.733 62.498 12.557 21.773 40.702 29.325 62.46 16.75 8.14-4.705 14.287-11.59 18.138-19.504l91.973 159.48 20.86-12.056 33.67 58.385 11.755-6.794 55.09 95.523 16.19-9.34-55.098-95.538 11.203-6.474-33.67-58.383 20.86-12.057-89.382-154.986c9.45 1.12 19.314-.67 28.13-5.764 21.756-12.575 29.288-40.725 16.732-62.498-7.848-13.608-21.785-21.66-36.446-22.717-8.797-.633-17.855 1.25-26.014 5.967-18.31 10.583-26.544 32.196-21.21 51.756l-17.343 10.024L162.7 61.004l26.53-15.334-13.984-24.248zm166.79 65.197L315.19 211.13l51.998 90.18 98.197 12.633-84.182-53.832 85.135-7.583-48.7-38.593 74.635-70.862-84.156 28.23-4.273-63.06-52.858 75.756-8.95-97.38zm-74.684 3.038c.58-.003 1.16.015 1.738.055 7.698.526 14.96 4.785 19.164 12.074 6.725 11.662 2.815 26.265-8.824 32.992-11.64 6.727-26.2 2.823-32.926-8.84-6.726-11.66-2.815-26.263 8.826-32.99 3.82-2.208 7.953-3.272 12.022-3.292zm-36.168 53.37L325.977 307.4l-48.498 28.03-94.794-164.37 48.498-28.03zm-93.55 14.14c.58-.003 1.16.015 1.737.055 7.7.526 14.962 4.783 19.165 12.072 6.726 11.662 2.815 26.265-8.824 32.992-11.64 6.728-26.2 2.826-32.925-8.836-6.725-11.66-2.814-26.265 8.826-32.993 3.82-2.208 7.955-3.27 12.023-3.29zm-30.464 85.34l44.424 40.724-101.96 4.772 81.18 43.94-96.996 81.226 109.668-25.215-4.494 82.777 63.87-78.173 26.32 70.577 26.832-87.922L191.26 262.91l-84.09-20.402z"/></svg>
@@ -135,7 +136,7 @@ export default function Sidebar() {
                                 </li>
                                 <li className="rounded-sm">
                                     <a
-                                        href="#"
+                                        href="#7"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
                                         <svg fill="#000000" width="24px" height="24px" viewBox="-3.5 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M11.16 16.153a.477.477 0 0 1-.476.475H1.316a.477.477 0 0 1-.475-.475V3.046a.477.477 0 0 1 .475-.475h6.95l2.893 2.893zm-1.11-9.924H8.059a.575.575 0 0 1-.574-.574V3.679H1.95v11.84h8.102zM3.907 4.92a1.03 1.03 0 1 0 1.029 1.03 1.03 1.03 0 0 0-1.03-1.03zm4.958 3.253h-5.87v1.108h5.87zm0 2.354h-5.87v1.109h5.87zm0 2.354h-5.87v1.109h5.87z"/></svg>
@@ -149,8 +150,85 @@ export default function Sidebar() {
                         </div>
                     </div>
                 </div>
+
                 <div className="container mx-auto mt-12">
-                    
+                    <form className="grid grid-cols-1 gap-6 mb-6 lg:grid-cols-2">
+        
+                            <div className="w-full px-2 py-2 bg-white rounded-lg shadow">
+                                <div className="font-bold text-[#000000] text-xl ml-20 mt-4 flex " >
+                                    Salutation:
+                                <span className="flex gap-6 ml-8">
+                                    <input type="radio" id="html" name="fav_language" value="HTML" />
+                                    <label for="html">Mr.</label>
+                                    <input type="radio" id="css" name="fav_language" value="CSS" />
+                                    <label for="css">Mrs.</label>
+                                    <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
+                                    <label for="javascript">Master</label>
+                                    <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
+                                    <label for="javascript">Miss</label>
+                                </span>
+                                </div>
+                            </div>
+
+                            <div className="w-full px-2 py-2 bg-white rounded-lg shadow">
+                                <div className="font-bold text-[#000000] text-xl ml-20 mt-4 flex " >
+                                    Gender:
+                                <span className="flex gap-6 ml-8">
+                                    <input type="radio" id="html" name="fav_language" value="HTML" />
+                                    <label for="html">Male</label>
+                                    <input type="radio" id="css" name="fav_language" value="CSS" />
+                                    <label for="css">Female</label>
+                                    <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
+                                    <label for="javascript">Other</label>
+                                </span>
+                                </div>
+                            </div>
+
+                            <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex">
+                                <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Name: </label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    className="w-full block px-16 py-2 mt-2 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
+                                  focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700"
+                                    placeholder="John Doe"/>
+                            </div>
+
+                            <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex">
+                                <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Age: </label>
+                                <input
+                                    type="number"
+                                    name="name"
+                                    className="w-full block px-16 py-2 mt-2 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
+                                  focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700"
+                                    placeholder=""/>
+                            </div>
+
+                            <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex">
+                                <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Address: </label>
+                                <textarea rows="4" cols="50"
+                                    type="text"
+                                    name="name"
+                                    className="w-full block px-16 py-2 mt-2 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
+                                  focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700"
+                                    placeholder=""/>
+                            </div>
+
+                            <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex">
+                                <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Blood Group: </label>
+                                    <select name="bg">
+                                        <option value="">A+</option>
+                                        <option value="">A-</option>
+                                        <option value="">B+</option>
+                                        <option value="">B-</option>
+                                        <option value="">O+</option>
+                                        <option value="">O-</option>
+                                        <option value="">AB+</option>
+                                        <option value="">AB-</option>
+                                    </select>
+                            </div>
+                        
+                    </form>
                 </div>
             </div>
         </div>
