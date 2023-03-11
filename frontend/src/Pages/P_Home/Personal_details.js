@@ -7,7 +7,7 @@ export default function Personal_details() {
         <div>
             <Navbar />
             <div className="flex">
-                <Sidebar />
+            <Sidebar />
 
                 <div className="container mx-auto mt-12">
                         <form className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6 mx-3">

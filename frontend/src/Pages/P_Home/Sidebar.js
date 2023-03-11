@@ -1,10 +1,11 @@
 import React from "react";
 // import { Radio } from "@material-tailwind/react";
+// import './Sidebar.css';
 
 
 export default function Sidebar() {
     return (
-        <div>
+        <div className="">
             <div className="flex">
                 <div className="flex flex-col h-screen p-3 bg-[#FFACAC] shadow w-60">
                     <div className="space-y-3">

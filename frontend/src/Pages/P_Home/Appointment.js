@@ -1,38 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import doc1 from "../../assets/doc1.jpg";
 import doc2 from "../../assets/doc2.jpeg";
 import doc3 from "../../assets/doc3.png";
 
+import Card from "../../components/Card";
+
 export default function Billing() {
+    const [showModal, setShowModal] = useState(false);
+    const handleClick = () =>{
+        alert("Appointment booked Successfully");
+        
+    }
     return (
         <div>
             <Navbar />
-            <div className="flex">
+            <div className="flex flex-wrap">
                 <Sidebar />
-                
-                <div className= "m-10">
-                    <div className="w-full rounded-lg shadow-md lg:max-w-sm">
-                        <img
-                            className="object-cover w-full rounded-lg"
-                            src={doc1}
-                            alt="image"
-                        />
-                        <div className="p-4">
-                            <h4 className="text-xl font-semibold tracking-tight text-blue-600">
-                                React Tailwind Card with Image
-                            </h4>
-                            <p className="mb-2 leading-normal">
-                                react tailwind css card with image It is a long established
-                                fact that a reader will be distracted by the readable
-                                content.
-                            </p>
-                            <button className="px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow">
-                                Read more
-                            </button>
-                        </div>
-                    </div>
+                <div>
+
+                    <Card
+                        image={doc1}
+                        name={"Dr. Avinash Chatterji"}
+                        desc={"Jaslok Hospital"}
+                        spec={"Oncologist"}
+                        book={"Select time"}
+                    />
+                    <button
+                        className="bg-blue-200 text-black active:bg-blue-400 
+      font-bold px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none m-10"
+                        type="button"
+                        onClick={handleClick}
+                    >
+                        Book Appointment
+                    </button>
+                </div>
+                <div>
+
+                    <Card
+                        image={doc2}
+                        name={"Dr. Mithul Doshi"}
+                        desc={"P.V Hinduja Hospital"}
+                        spec={"Pediatrician"}
+                        book={"Select time"}
+                    />
+                    <button
+                        className="bg-blue-200 text-black active:bg-blue-400 
+      font-bold px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none m-10"
+                        type="button"
+                        onClick={handleClick}
+                    >
+                        Book Appointment
+                    </button>
+                </div>
+                <div>
+                    <Card
+                        image={doc3}
+                        name={"Dr. Prerak Mehta"}
+                        desc={"Lilavati Hospital"}
+                        spec={"Neurologist"}
+                        book={"Select time"}
+                    />
+                    <button
+                        className="bg-blue-200 text-black active:bg-blue-400 
+      font-bold px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none m-10"
+                        type="button"
+                        onClick={handleClick}
+                    >
+                        Book Appointment
+                    </button>
                 </div>
 
             </div>

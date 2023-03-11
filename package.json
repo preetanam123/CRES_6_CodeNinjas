@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@material-tailwind/react": "^1.4.2"
+    "@material-tailwind/react": "^1.4.2",
+    "react-range-slider-input": "^3.0.7"
   }
 }
