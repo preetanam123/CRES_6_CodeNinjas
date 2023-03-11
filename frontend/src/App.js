@@ -6,11 +6,16 @@ import NavBar from "./Pages/P_Home/Navbar";
 import Sidebar from "./Pages/P_Home/Sidebar";
 import Personal from "./Pages/P_Home/Personal_details";
 import Appointment from "./Pages/P_Home/Appointment";
+import Chat from "./components/Chat";
+
 
 function App() {
   return (
+    
     <Router>
+      
       <Routes>
+        
         <Route path="/" element = {<Landing />} />
         <Route path="/login" element = {<Login/>} />
         <Route path="/signup" element = {<SignUp />} />
@@ -20,6 +25,7 @@ function App() {
         <Route path="/appointment" element = {<Appointment />}></Route>
       </Routes>
     </Router>
+    
   );
 }
 

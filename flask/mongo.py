@@ -13,5 +13,7 @@ def getDisease():
     lst = list(allDocs)
     df = pd.DataFrame(lst)
     print(df)
+    return df
+    
 
 getDisease()
