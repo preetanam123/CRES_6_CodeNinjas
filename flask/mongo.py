@@ -12,8 +12,6 @@ def getDisease():
     allDocs = json.loads(json_util.dumps(allDocs))
     lst = list(allDocs)
     df = pd.DataFrame(lst)
-    print(df)
+    # print(df)
     return df
-    
-
 getDisease()
