@@ -1,5 +1,5 @@
 import React from "react";
-import verify3 from "../../assets/verify3.svg";
+import login from "../../assets/login.png";
 import google from "../../assets/google.png"
 import facebook from "../../assets/facebook.png"
 import { useNavigate } from "react-router-dom";
@@ -64,7 +64,7 @@ const SignUp = () => {
       </h6> */}
       <div className="px-16 py-16 bg-white mx-40 mt-6 mb-6 h-[100%] rounded-3xl flex justify-center">
         <div className="w-1/2 h-4/5 mt-10">
-          <img src={verify3} className="h-full w-4/5 ml-14" alt="" />
+          <img src={login} className="h-full w-4/5 ml-14" alt="" />
         </div>
         <div className=" w-1/2 h-4/5">
           <div className="font-bold  ml-4 text-3xl text-center pb-6">

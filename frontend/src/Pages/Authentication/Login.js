@@ -1,5 +1,5 @@
 import React from "react";
-import verify from "../../assets/verify.svg"
+import login from "../../assets/login.png"
 import google from "../../assets/google.png"
 import facebook from "../../assets/facebook.png"
 import axios from "axios";
@@ -92,7 +92,7 @@ const Login = () => {
           </div>
           
           <div className="w-1/2 h-4/5">
-            <img src={verify} className="h-full w-full" />
+            <img src={login} className="h-full w-full" />
           </div>
         </div>
       </div>
