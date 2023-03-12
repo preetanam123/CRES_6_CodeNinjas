@@ -6,6 +6,7 @@ import NavBar from "./Pages/P_Home/Navbar";
 import Sidebar from "./Pages/P_Home/Sidebar";
 import Personal from "./Pages/P_Home/Personal_details";
 import Appointment from "./Pages/P_Home/Appointment";
+import Reports from "./Pages/P_Home/Reports";
 import Chat from "./components/Chat";
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/sidebar" element = {<Sidebar />}></Route>
         <Route path="/personal" element = {<Personal />}></Route>
         <Route path="/appointment" element = {<Appointment />}></Route>
+        <Route path="/reports" element = {<Reports />}></Route>
       </Routes>
     </Router>
     
