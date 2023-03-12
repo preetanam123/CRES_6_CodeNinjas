@@ -4,10 +4,11 @@ import SignUp from "./Pages/Authentication/SignUp";
 import Landing from "./Pages/Landing/Landing";
 import NavBar from "./Pages/P_Home/Navbar";
 import Sidebar from "./Pages/P_Home/Sidebar";
-import Personal from "./Pages/P_Home/Personal_details";
+import Personal from "./Pages/P_Home/Personal";
 import Appointment from "./Pages/P_Home/Appointment";
 import Reports from "./Pages/P_Home/Reports";
 import Chat from "./components/Chat";
+import Laborartory from "./Pages/P_Home/Laborartory";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/personal" element = {<Personal />}></Route>
         <Route path="/appointment" element = {<Appointment />}></Route>
         <Route path="/reports" element = {<Reports />}></Route>
+        <Route path="/labo" element = {<Laborartory />} />
       </Routes>
     </Router>
     
