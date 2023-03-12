@@ -54,15 +54,15 @@ const SignUp = () => {
       alert("Error occured while logging in");
     }
   };
-
+// bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
   return (
-    <div className="w-full h-full bg-cover bg-[#FFACAC] min-h-[100%] min-w-screen">
+    <div className="w-full h-full bg-cover bg-gradient-to-r from-blue-500 to-green-400 min-h-[100%] min-w-screen">
       <h1 className="text-6xl font-bold text-white px-16 pt-10">E-LEARNING</h1>
       <br />
       {/* <h6 className="text-xl font-semibold text-white px-16">
         SignUp with us and secure your documents by verifying
       </h6> */}
-      <div className="px-16 py-16 bg-white mx-40 mt-6 mb-6 h-[100%] rounded-3xl flex justify-center">
+      <div className="px-16 py-16 bg-white mx-40 mt-6 mb-6 h-[100%] rounded-2xl flex justify-center">
         <div className="w-1/2 h-4/5 mt-10">
           <img src={login} className="h-full w-4/5 ml-14" alt="" />
         </div>
