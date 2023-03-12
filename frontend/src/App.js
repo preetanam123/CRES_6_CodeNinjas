@@ -4,9 +4,10 @@ import SignUp from "./Pages/Authentication/SignUp";
 import Landing from "./Pages/Landing/Landing";
 import NavBar from "./Pages/P_Home/Navbar";
 import Sidebar from "./Pages/P_Home/Sidebar";
-import Personal from "./Pages/P_Home/Personal_details";
+import Personal from "./Pages/P_Home/Personal";
 import Appointment from "./Pages/P_Home/Appointment";
 import Chat from "./components/Chat";
+import Laborartory from "./Pages/P_Home/Laborartory";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/sidebar" element = {<Sidebar />}></Route>
         <Route path="/personal" element = {<Personal />}></Route>
         <Route path="/appointment" element = {<Appointment />}></Route>
+        <Route path="/labo" element = {<Laborartory />} />
       </Routes>
     </Router>
     

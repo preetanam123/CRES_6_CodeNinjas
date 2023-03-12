@@ -6,7 +6,10 @@ import predict
 import pickle
 import numpy as np
 # import mongo
+lin_model = pickle.load(open('model1.pkl','rb'))
+log_model = pickle.load(open('model2.pkl','rb'))
 svc_model = pickle.load(open('model3.pkl','rb'))
+
 app = Flask(__name__)
 CORS(app)
 
@@ -18,17 +21,21 @@ def hello_world():
 def rec():
     jsonData = request.get_json()
     l=[]
-    l.append(jsonData['lymphocytes'])
-    l.append(jsonData['platelets'])
-    l.append(jsonData['RBCs'])
-    l.append(jsonData['haemoglobin'])
-    arr = np.array(l)
+    l.append(jsonData['value1'])
+    l.append(jsonData['value2'])
+    l.append(jsonData['value3'])
+    l.append(jsonData['value4'])
+    arr = np.array(l, dtype = float)
+    print(arr)
 
-    arr2 = arr.reshape(1,-1)
+    arr2 = arr.reshape(1,-1).astype(np.float32)
+    # arr3 = arr2.astype(np.float)
+    print(arr2)
 
     
 
-    ans = predict.classify(svc_model.predict(arr2))
+    ans = predict.classify(log_model.predict(arr2))
+    print(log_model.predict(arr2))
     return ans
 
 

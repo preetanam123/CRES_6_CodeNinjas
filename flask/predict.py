@@ -7,7 +7,7 @@ log_model = pickle.load(open('model2.pkl','rb'))
 svc_model = pickle.load(open('model3.pkl','rb'))
 
 def classify(num):
-    if num<0.5:
+    if num < 0.5:
         return 'Dengue'
     
     elif num < 1.5:
@@ -18,7 +18,8 @@ def classify(num):
     
 # df = mongo.getDisease()
 # X = df[['lymphocytes', 'platelets','RBCs', 'haemoglobin']].values
-# output = classify(svc_model.predict(X))
+# output = classify(log_model.predict(X))
+# print(log_model.predict(X))
 # print(output)
 
 
