@@ -7,6 +7,7 @@ import Sidebar from "./Pages/P_Home/Sidebar";
 import Personal from "./Pages/P_Home/Personal_details";
 import Appointment from "./Pages/P_Home/Appointment";
 import Chat from "./components/Chat";
+import Graph from "./Pages/P_Home/Graph";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/sidebar" element = {<Sidebar />}></Route>
         <Route path="/personal" element = {<Personal />}></Route>
         <Route path="/appointment" element = {<Appointment />}></Route>
+        <Route path="/Graph" element = {<Graph />}></Route>
       </Routes>
     </Router>
     
