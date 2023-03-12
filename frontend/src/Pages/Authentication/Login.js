@@ -42,14 +42,13 @@ const Login = () => {
     }
   }
 
-
   return (
     <>
-      <div className="w-full h-fit bg-cover bg-[#A8DADC] min-h-screen min-w-screen">
+      <div className="w-full h-fit bg-cover bg-gradient-to-r from-green-400 to-blue-500 min-h-screen min-w-screen">
         <h1 className="text-6xl font-bold text-white px-16 pt-10">E-LEARNING</h1>
         <br />
         {/* <h6 className="text-xl font-semibold text-white px-16">A platform to Verify your documents and safeguard them</h6> */}
-        <div className="px-16 py-16 bg-white mx-40 mt-6 mb-6 h-[100%] rounded-3xl flex justify-center" >
+        <div className="px-16 py-16 bg-white mx-40 mt-6 mb-6 h-[100%] rounded-2xl flex justify-center" >
           <div className=" w-1/2 h-4/5">
             <div className="font-bold  ml-4 text-4xl text-center pb-6">LOGIN 
             </div> 

@@ -4,8 +4,8 @@ import Chat from '../../components/Chat'
 
 const Landing = () => {
   return (
-    <div>
-        Landing Page will go here 
+    <div className='bg-gradient-to-br from-blue-500 via-green-400 to-white w-full h-full'>
+        landing page
         <Chat />
     </div>
   )
